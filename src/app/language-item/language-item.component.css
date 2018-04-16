@@ -1,0 +1,22 @@
+:host {
+    display: block;
+    font-size: 0;
+    width: 200px;
+    display: flex;
+}
+.badge, .name {
+    display: inline-block;
+    padding: 10px;
+    font-size: 12pt;
+}
+.badge {
+    width: 20px;
+    background-color: rgb(247, 142, 6);
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+}
+.name {
+    flex: 1;
+    background-color: #EEE;
+    border-radius: 0 4px 4px 0;
+    }

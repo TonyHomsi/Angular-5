@@ -1,0 +1,22 @@
+<!--  <h2>Available Languages</h2>
+<ul class="langs">
+  <li *ngFor="let lang of langs">
+    <a routerLink="/lang/{{lang.id}}">
+      <span class="badge">{{lang.id}}</span> {{lang.name}}
+    </a>
+  </li>
+</ul>
+<form>
+  <h3>New Language</h3>
+  <div>
+    <label>Name</label>
+    <input type="text" name="name" [(ngModel)]="languageName" />
+  </div>
+  <div>
+    <button (click)="createLanguage()">Create</button>
+  </div>
+</form>-->
+
+<li *ngFor="let lang of langs">
+  <app-language-item [lang]="lang"></app-language-item>
+  </li>

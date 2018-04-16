@@ -1,0 +1,23 @@
+<div *ngIf="lang">
+  <h2>{{lang.name}} Details</h2>
+  <div>
+    <span>id: </span>{{lang.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="lang.name" placeholder="name" />
+    </label>
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>
+
+
+<div>
+  <h3>Which users know this language?</h3>
+  <ul class="user-list">
+    <li *ngFor="let userState of userStates">
+      <label>
+        <input type="checkbox" [(ngModel)]="userState.state" (change)="updateUserKnowledge()" /> {{ userState.user.name }}</label>
+    </li>
+  </ul>
+</div>
